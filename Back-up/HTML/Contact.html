@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index Jarditou</title>
+
+  <!-- Lien vers feuille CSS -->
+  <!-- <link rel="stylesheet" href="../Jarditou/Jarditou_CSS/Assets/CSS/styles.css">  -->
+
+</head>
+
+<body>
+  <Header>
+   
+    <img src="../HTML/IMG/jarditou_logo.jpg" alt="Logo Jarditou" class="Logo_Jarditou" title="Logo Jarditou" width="500" height="150">
+    <h3>La qualité depuis 70 ans !</h3>
+
+  </Header>
+  
+  <nav>
+
+    <ul type="disc">
+      <li><a href="../HTML/Index.html" title="Accueil">Accueil</a></li>
+      <li><a href="../HTML/Tableau.html" title="Tableau">Tableau</a></li>
+      <li><a href="../HTML/Contact.html" title="Contact">Contact</a></li>
+    </ul>
+    <br>
+   
+  </nav>
+
+  <img src="../HTML/IMG/promotion.jpg" alt="Promotion lames de terrasse Jaritou" title="Promotion lames de terrasse Jarditou">
+  
+  <main>
+    <section>
+      <!-- Heading -->
+      <h2>Contact</h2>
+      <HR ALIGN=LEFT SIZE="1" WIDTH="1110">
+
+      <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact"> 
+
+        <p>* Ces zones sont obligatoires</p> 
+  
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+  
+                <label for="nom">Votre nom*: </label><input type="text" name="nom" id="nom" placeholder="Entrez votre nom" required title="Veuillez entrer votre nom"><br>
+                <label for="prenom">Votre prénom*: </label><input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required title="Veuillez entrer votre prénom"><br>
+      
+                <p>Sexe*:<input type="radio" name="sexe" id="sexe1" value="feminin" required title="Veuillez entrer votre sexe"> Féminin
+                         <input type="radio" name="sexe" id="sexe2" value="masculin" required title="Veuillez entrer votre sexe"> Masculin</p>
+
+                <label for="date">Date de naissance*: </label><input type="date" name="date" id="date" required title="Veuillez entrer votre sexe"><br>
+                <label for="cp">Code postal*: </label><input type="text" name="cp" id="cp" placeholder="Entrez votre code postal" required title="Veuillez entrer votre code postal"><br>
+                <label for="adresse">Adresse*: </label><input type="text" name="adresse" id="adresse" placeholder="Entrez votre adresse" required title="Veuillez entrer votre adresse"><br>
+                <label for="ville">Ville*: </label><input type="text" name="ville" id="ville" placeholder="Entrez votre ville" required title="Veuillez entrer votre ville"><br>
+                <label for="email">Email*: </label><input type="text" name="email" id="email" placeholder="Entrez votre email" required title="Veuillez entrer votre email"><br>
+               
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Votre demande</legend>
+  
+                <label for="sujet">Sujet*: </label>
+                <select id="sujet" required title="Veuillez entrer le sujet de votre demande"> 
+                    <option value="" selected>Veuillez séléctionner un sujet</option>
+                    <option value="commandes">Mes commandes</option>
+                    <option value="produit">Questions sur un produit</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autres">Autres</option>
+                </select>
+                <br>
+                <label for="question">Votre question*: </label><textarea name="commentaire" id="question" rows="4" cols="30" placeholder="Posez votre question ici" required title="Veuillez poser votre question"></textarea><br>
+                  
+        </fieldset>
+                  
+                <br>
+                <input type="checkbox" name="donnees" value="donnees" required title="Veuillez cocher cette case"> * J'accepte le traitement informatique de ce formulaire<br>
+                <br>
+                <input type="submit" name="envoyer" value=" Envoyer ">
+                <input type="reset" name="annuler" value="annuler">
+  
+  
+      </form>
+
+    </section>  
+    
+    <aside>
+    </aside>
+
+    <div>
+    </div>
+
+  </main>
+
+  
+  <footer>
+    
+    <HR ALIGN=LEFT SIZE="1" WIDTH="1110">
+      
+      <ul type="disc">
+        <li><a href="../HTML/Mentions_legales.html" title="Mentions legales">Mentions légales</a></li>
+        <li><a href="../HTML/Horaires.html" title="Horaires">Horaires</a></li>
+        <li><a href="../HTML/Plan_du_site.html" title="Plan du site">Plan du site</a></li>
+      </ul>
+      
+  </footer>
+    
+</body>
+</html>

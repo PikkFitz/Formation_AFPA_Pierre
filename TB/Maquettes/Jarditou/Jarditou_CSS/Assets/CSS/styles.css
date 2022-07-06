@@ -1,0 +1,237 @@
+/* Marges internes et externes des box pour la page HTML et le Body + couleur du fond*/
+html{
+    margin: 0; padding: 0
+}
+
+body {
+background-color:rgb(255, 255, 255);
+margin:0px 0px 0px 0px;
+}
+
+img 
+{
+     max-width: 100%;
+     height: auto;
+}
+
+/*!!!!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!!!!*/
+
+Header {
+    display : flex;
+    overflow: auto;
+    flex-direction : row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+.logo_jarditou { 
+    max-width : 25%;
+    height : auto;
+}
+
+.slogan{
+   margin: auto;
+   font-size: 40px;
+   color:rgb(0, 99, 0)
+}
+
+/*!!!!!!!!!!!!!!!!!! NAV !!!!!!!!!!!!!!!!!!*/
+
+nav {
+    background-color: rgb(0, 0, 0);
+    list-style: none ;
+    text-align: center ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 0px 1px 0px ;
+}
+
+nav li {
+    display : inline;
+    margin-right: 20px;
+}
+
+nav li a {
+    color:rgb(255, 255, 255);
+    text-decoration: none ;
+}
+
+nav li a:hover, nav li a:focus, nav li a:active {
+    background: rgb(0, 99, 0) ;
+    text-decoration: underline ;
+}
+
+/*!!!!!!!!!!!!!!!!!! IMAGE PROMOTION !!!!!!!!!!!!!!!!!!*/
+
+.promotion {
+    width: 100%;
+    height : auto;
+    margin:10px 0px 10px 0px;
+}
+
+
+/*!!!!!!!!!!!!!!!!!! INDEX !!!!!!!!!!!!!!!!!!*/
+
+#main_index {
+    display : flex;
+    overflow: auto;
+    flex-direction : row;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_index {
+    width: 75%;
+    height: auto;
+    margin: 0px 10px 0px 0px;
+}
+
+.article{
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.aside_index {
+    width: 24%;
+    height: 514.41px;
+    background-color: rgb(201, 189, 189);
+    
+}
+
+/*!!!!!!!!!!!!!!!!!! TABLEAU !!!!!!!!!!!!!!!!!!*/
+
+#main_tableau {
+    display : flex;
+    overflow: auto;
+    flex-direction : row;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_tableau {
+    width: 75%;
+    height: auto;
+    margin: 0px 10px 0px 0px;
+}
+
+#table_1{
+    border-top-style: solid;
+    border-width: 1px;
+    padding: 10px 0px 0px 0px;
+    vertical-align : middle;
+    text-align : center;
+/* Pour supprimer l'espace entre les cellules, entrer les 2 lignes ci-dessous :
+    border-collapse : collapse;
+    border-spacing : 0; */
+}
+
+#table_1 td {
+    width: 12.5%;
+    border : 1px solid green;
+}
+
+#table_1 th {
+    width: 12.5%;
+    border : 1px solid green;
+}
+
+.aside_tableau {
+    width: 24%;
+    height: 834.81px;
+    background-color: rgb(201, 189, 189);
+}
+
+/*!!!!!!!!!!!!!!!!!! CONTACT !!!!!!!!!!!!!!!!!!*/
+
+#main_contact {
+    display : flex;
+    overflow: auto;
+    flex-direction : row;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_contact {
+    width: 75%;
+    height: auto;
+    margin: 0px 10px 10px 0px;
+}
+
+#formulaire_contact {
+    display : block;
+    overflow: auto;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+.aside_contact {
+    width: 24%;
+    height: 573.33px;
+    background-color: rgb(201, 189, 189);
+}
+
+/*!!!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!*/
+
+footer {
+    background-color: rgb(0, 0, 0);
+    list-style: none ;
+    text-align: center ;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 0px 1px 0px ;
+    margin : 10px 0px 0px 0px;
+}
+
+footer li {
+    display : inline;
+    margin-right: 10px;
+}
+
+footer li a {
+    color:rgb(255, 255, 255);
+    text-decoration: none ;
+}
+
+footer li a:hover, footer li a:focus, footer li a:active {
+    background: rgb(0, 99, 0) ;
+    text-decoration: underline ;
+}
+
+/*!!!!!!!!!!!!!!!!!! MEDIA QUERIES !!!!!!!!!!!!!!!!!!*/
+
+@media screen and (max-width: 768px) {
+
+    .slogan{
+        font-size: 25px;
+     }
+
+    .aside_index, .aside_tableau, .aside_contact {
+        visibility: hidden;
+    }
+
+    nav {
+     
+        padding : 1px 0px 1px 0px;
+        margin : 2px 0px 0px 0px;  
+    }
+    
+    nav li {
+        display : flex;
+    }
+
+    footer {
+        padding: 1px 0px 1px 0px ;
+        margin : 0px 0px 0px 0px;
+    }
+    
+    footer li {
+        display : flex;
+    }
+
+}
