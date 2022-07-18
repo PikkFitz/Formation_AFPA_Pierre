@@ -1,0 +1,13 @@
+let nom = window.prompt("Saisissez votre nom");
+let prenom = window.prompt("Saisissez votre prénom");
+
+if (window.confirm("Etes-vous un homme ?") == true)
+{ 
+    let sexe = "Monsieur";
+    window.alert("Bonjour " + sexe + " " + nom + " " + prenom); 
+}
+else
+{
+    let sexe = "Madame";
+    window.alert("Bonjour " + sexe + " " + nom + " " + prenom);
+}
