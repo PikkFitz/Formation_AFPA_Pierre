@@ -1,3 +1,5 @@
+function exercice_1(){
+
 let nom = window.prompt("Saisissez votre nom");
 let prenom = window.prompt("Saisissez votre prénom");
 
@@ -10,4 +12,6 @@ else
 {
     let sexe = "Madame";
     window.alert("Bonjour " + sexe + " " + nom + " " + prenom);
+}
+
 }

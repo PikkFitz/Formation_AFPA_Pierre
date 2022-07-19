@@ -1,3 +1,5 @@
+function exercice_2(){
+
 let a = "100";
 let b = 100;
 let c = 1.00;
@@ -12,4 +14,6 @@ c += a;
 window.alert(c);
 
 d =! d;
-window.alert(d);
+window.alert(d)
+
+}
