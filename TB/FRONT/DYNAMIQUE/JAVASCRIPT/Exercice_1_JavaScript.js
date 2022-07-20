@@ -1,3 +1,8 @@
+// Exercice
+// Créer un script qui demande successivement à l'utilisateur son nom puis son prénom.
+// La page demande ensuite à l'utilisateur s'il est un homme ou une femme.
+// Enfin, la page affiche les informations sur l'utilisateur.
+
 function exercice_1(){
 
 let nom = window.prompt("Saisissez votre nom");

@@ -1,3 +1,7 @@
+// Exercice
+// Ecrivez un programme qui demande l'année de naissance à l'utilisateur. 
+// En réponse votre programme doit afficher l'âge de l'utilisateur et indiquer si l'utilisateur est majeur ou mineur.
+
 function exercice_4(){
 
 let y = 2022

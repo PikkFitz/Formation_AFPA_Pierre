@@ -1,5 +1,0 @@
-let a = window.prompt("Saisissez un premier nombre : ");
-let b = window.prompt("Saisissez un second nombre : ");
-let r = Number(a) + Number(b)
-
-   window.alert(r);
