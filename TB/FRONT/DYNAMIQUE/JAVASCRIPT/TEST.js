@@ -1,4 +1,9 @@
-function TEST(){
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+
+var bouton_TEST_JS= document.getElementById("Id_button_TEST_JS");
+bouton_TEST_JS.addEventListener("click", test_js);
+
+function test_js(){
 
 let tab1 = 
 [

@@ -1,7 +1,12 @@
 // Exercice 
 // Ecrire un programme qui saisit des entiers et en affiche la somme et la moyenne (on arrête la saisie avec la valeur 0).
 
-function exercice_8(){
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+
+var bouton_Ex_8_JS= document.getElementById("Id_button_Ex_8_JS");
+bouton_Ex_8_JS.addEventListener("click", exercice_8_js);
+
+function exercice_8_js(){
 
 let n;
 let som = 0;

@@ -11,7 +11,12 @@
 
 // Il est demandé de choisir la structure répétitive (for, while, do...while) la mieux appropriée au problème.
 
-function exercice_9(){
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+
+var bouton_Ex_9_JS= document.getElementById("Id_button_Ex_9_JS");
+bouton_Ex_9_JS.addEventListener("click", exercice_9_js);
+
+function exercice_9_js(){
 
 let n = window.prompt("Saisissez un nombre : ");
 let x = window.prompt("Saisissez le nombre de premiers multiples désirés du nombre précédent : ");

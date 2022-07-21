@@ -3,7 +3,12 @@
 // La page doit continuer à demander des prénoms à l'utilisateur jusqu'à ce qu'il laisse le champ vide.
 // Enfin, la page affiche sur la console le nombre de prénoms et les prénoms saisis.
 
-function exercice_6(){
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+
+var bouton_Ex_6_JS= document.getElementById("Id_button_Ex_6_JS");
+bouton_Ex_6_JS.addEventListener("click", exercice_6_js);
+
+function exercice_6_js(){
 
 let p = true;
 let prenom;

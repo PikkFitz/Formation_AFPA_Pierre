@@ -6,7 +6,12 @@
 // (attention, en Javascript, le 1er caractère se trouve à la position 0)
 // myVar.indexOf(chaine) : retourne le rang de la première occurrence de chaîne dans la variable myVar donnée (si non trouvé : -1).
 
-function exercice_10_test(){
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+
+var bouton_Ex_10_Test_JS= document.getElementById("Id_button_Ex_10_Test_JS");
+bouton_Ex_10_Test_JS.addEventListener("click", exercice_10_test_js);
+
+function exercice_10_test_js(){
 
     let m = window.prompt("Saisissez un mot : ");
     let nl = m.length;

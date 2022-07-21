@@ -1,7 +1,12 @@
 // Exercice
 // Ecrire un programme qui affiche les nombres inférieurs à N.
 
-function exercice_7(){
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+
+var bouton_Ex_7_JS= document.getElementById("Id_button_Ex_7_JS");
+bouton_Ex_7_JS.addEventListener("click", exercice_7_js);
+
+function exercice_7_js(){
 
 let n = window.prompt("Saisissez un nombre : ");
 let r;

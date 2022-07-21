@@ -1,25 +1,17 @@
 // Exercice 
-// Ecrivez un programme permettant de créer un tableau, dont la taille est saisie au clavier.
-// Ensuite l'utilisateur doit rentrer les différentes valeurs du tableau.
-// Puis votre programme doit afficher le contenu du tableau.
+// Créer les 2 fonctions suivantes :
 
-function exercice_11(){
+// produit(x, y) qui retourne le produit des 2 variables x, y passées en paramètre.
+// afficheImg(image) qui affiche l'image passée en paramètre. ( Le paramètre image correspond au chemin de votre image )
+// Créer la page HTML correspondant au résultat ci-dessous :
 
-let cell = Number(window.prompt("Saisissez la taille du tableau : "));
-let tab = new Array(cell);
-let i = 0;
+// Veuillez utiliser la propriété innerHTML pour réaliser cet exercice :
+// HTML DOM innerHTML
 
-window.alert("Le tableau contient " + cell + " cellules");
-console.log("Le tableau contient " + cell + " cellules");
-window.alert(tab.length);
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
 
-for (i = 0; i <= (cell-1); i++) 
-{
-    tab[i] = [window.prompt("Saisissez une valeur à entrer dans le tableau : ")];   
-    window.alert("La derniere valeur rentrée est : " + tab[i]);
-    console.log("La derniere valeur rentrée est : " + tab[i]);
-}
+// var bouton_Ex_11_JS= document.getElementById("Id_button_Ex_11_JS");
+// bouton_Ex_11_JS.addEventListener("click", exercice_11_js);
 
-window.alert(tab);
-
-}
+// function exercice_11_js(){
+// }

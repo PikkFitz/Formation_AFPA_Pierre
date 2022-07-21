@@ -12,7 +12,12 @@
 // Ajoutez à c la valeur de a
 // Inversez la valeur de d
 
-function exercice_2(){
+// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+
+var bouton_Ex_2_JS= document.getElementById("Id_button_Ex_2_JS");
+bouton_Ex_2_JS.addEventListener("click", exercice_2_js);
+
+function exercice_2_js(){
 
 let a = "100";
 let b = 100;
