@@ -30,8 +30,8 @@ for (i=0; i<=nl-1; i++)
             let pl = m.indexOf(lx);
              alert("pl = "+pl);
 
-            pl = m.indexOf(lx, pl+1);
-            alert("pl = "+pl);
+            // pl = m.indexOf(lx, pl+1);
+            // alert("pl = "+pl);
     
             if(pl == -1)
             {
