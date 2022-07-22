@@ -5,25 +5,18 @@ bouton_TEST_JS.addEventListener("click", test_js);
 
 function test_js(){
 
-let tab1 = 
-[
-    ["poireau", "tomate", "carotte"],
-    ["pomme", "poire", "banane"]
-];
-        
-alert(tab1);
+    function multiplie(a, b) 
+    {
+       return a * b
+    }
+
+
+a = window.prompt("Entrer un nombre : ")   
+b = window.prompt("Entrer un nombre : ")  
+multiplie(a, b); 
+console.log("Résultat : " + multiplie(a, b)); 
+window.alert("Résultat : " + multiplie(a, b))
+
+
     
-
-
-
-// var monTableau = new Array(10);
-// for (var i = 0; i < 10; i++)
-// {
-//  monTableau[i] = new Array(20);
-// }
-// alert(monTableau);
-
-//On affecte une valeur de la même façon qu'on l'affiche monTableau[0][0] = Paul;
-
-
 }
