@@ -7,11 +7,38 @@
 
 // Veuillez utiliser la propriété innerHTML pour réaliser cet exercice :
 // HTML DOM innerHTML
+ 
+function produit(x, y)
+{
 
-// Supprimer la ligne var et la ligne bouton pour remplacer le bouton par un lien (dans la page HTML)
+    let res = x*y;
+    console.log("Le resultat est : " + res);
+    
+    return res;
+    
+}
 
-// var bouton_Ex_11_JS= document.getElementById("Id_button_Ex_11_JS");
-// bouton_Ex_11_JS.addEventListener("click", exercice_11_js);
+let x = window.prompt("Saisissez un premier multiplicateur : ");
+console.log("Le premier nombre saisi est : " + x);
+let y = window.prompt("Saisissez un second multiplicateur : ");
+console.log("Le second nombre saisi est : " + y);
 
-// function exercice_11_js(){
-// }
+let resultat = produit(x, y);
+console.log(resultat);
+
+
+//img src ="../JAVASCRIPT/Images/papillon.jpg"
+
+function afficheImg(image)
+{
+
+document.write('<img src= '+ image +' id="id_img_papillon" alt="image dessin papillon coloré" class="img_papillon" title="Image papillon">');
+
+}
+
+afficheImg('../JAVASCRIPT/Images/papillon.jpg');
+
+let p = ("<br>"+"La multiplication : " + x + " x " + y + " = " + resultat);
+document.getElementById("p1").innerHTML = p
+
+// document.write("<br>"+"La multiplication : " + x + " x " + y + " = " + resultat);
