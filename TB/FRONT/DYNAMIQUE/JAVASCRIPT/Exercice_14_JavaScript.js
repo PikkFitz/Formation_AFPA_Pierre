@@ -16,35 +16,33 @@
 // Les fonctions seront appelées successivement.
 
 
-var bouton_GetInteger= document.getElementById("Id_button_GetInteger");
+var bouton_GetInteger = document.getElementById("Id_button_GetInteger");
 bouton_GetInteger.addEventListener("click", GetInteger);
 
-function GetInteger(){
+function GetInteger() {
     
-    // let tableau = ["GetInteger"];
-    // window.alert(tableau);
-
-    let gi = window.prompt("Saisissez un nombre entier : ")
-  
-   
+    window.prompt("saisir un nombre entier : ")
+    
 }
 
-var bouton_InitTab= document.getElementById("Id_button_InitTab");
+
+
+
+var bouton_InitTab = document.getElementById("Id_button_InitTab");
 bouton_InitTab.addEventListener("click", InitTab);
 
 function InitTab(){
     
-    // let tableau = ["InitTab"];
-    // window.alert(tableau);
+    // cell = Number(window.prompt("Entrer un nom de cellules : "));
+    cell = Number(GetInteger());
+    tab = new Array(cell);
 
-    let cell = Number(gi);
-    let tab = new Array(cell);
-
+    console.log("tab.length : " + tab.length);
     console.log("Le tableau contient " + cell + " cellules");
    
 }
 
-var bouton_SaisieTab= document.getElementById("Id_button_SaisieTab");
+var bouton_SaisieTab = document.getElementById("Id_button_SaisieTab");
 bouton_SaisieTab.addEventListener("click", SaisieTab);
 
 function SaisieTab(){
@@ -66,7 +64,7 @@ function SaisieTab(){
 
 }
 
-var bouton_AfficheTab= document.getElementById("Id_button_AfficheTab");
+var bouton_AfficheTab = document.getElementById("Id_button_AfficheTab");
 bouton_AfficheTab.addEventListener("click", AfficheTab);
 
 
@@ -79,7 +77,7 @@ function AfficheTab(){
 
 }
 
-var bouton_RechercheTab= document.getElementById("Id_button_RechercheTab");
+var bouton_RechercheTab = document.getElementById("Id_button_RechercheTab");
 bouton_RechercheTab.addEventListener("click", RechercheTab);
 
 function RechercheTab(){
@@ -89,7 +87,7 @@ function RechercheTab(){
 
 }
 
-var bouton_InfoTab= document.getElementById("Id_button_InfoTab");
+var bouton_InfoTab = document.getElementById("Id_button_InfoTab");
 bouton_InfoTab.addEventListener("click", InfoTab);
 
 function InfoTab(){

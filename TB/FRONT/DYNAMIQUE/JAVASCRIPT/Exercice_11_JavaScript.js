@@ -24,7 +24,7 @@ let y = window.prompt("Saisissez un second multiplicateur : ");
 console.log("Le second nombre saisi est : " + y);
 
 let resultat = produit(x, y);
-console.log(resultat);
+console.log("Résultat : " + resultat);
 
 
 //img src ="../JAVASCRIPT/Images/papillon.jpg"

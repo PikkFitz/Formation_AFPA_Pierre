@@ -10,12 +10,16 @@ function test_js(){
        return a * b
     }
 
+a = window.prompt("Entrer le multiplicateur a : ");  
+console.log("Multiplicateur a : " + a);  
+b = window.prompt("Entrer le multiplicateur b : ");
+console.log("Multiplicateur b : " + b);   
+resultat = multiplie(a, b); 
+console.log("Résultat : " + resultat); 
+window.alert("Résultat : " + resultat);
 
-a = window.prompt("Entrer un nombre : ")   
-b = window.prompt("Entrer un nombre : ")  
-multiplie(a, b); 
-console.log("Résultat : " + multiplie(a, b)); 
-window.alert("Résultat : " + multiplie(a, b))
+// console.log("Résultat : " + multiplie(a, b)); 
+// window.alert("Résultat : " + multiplie(a, b));
 
 
     
