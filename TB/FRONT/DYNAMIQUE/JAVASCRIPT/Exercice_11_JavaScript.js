@@ -7,7 +7,7 @@
 
 // Veuillez utiliser la propriété innerHTML pour réaliser cet exercice :
 // HTML DOM innerHTML
- 
+
 function produit(x, y)
 {
 
@@ -23,8 +23,8 @@ console.log("Le premier nombre saisi est : " + x);
 let y = window.prompt("Saisissez un second multiplicateur : ");
 console.log("Le second nombre saisi est : " + y);
 
-let resultat = produit(x, y);
-console.log("Résultat : " + resultat);
+produit(x, y);
+console.log("Résultat : " + produit(x, y));
 
 
 //img src ="../JAVASCRIPT/Images/papillon.jpg"
@@ -38,7 +38,8 @@ document.write('<img src= '+ image +' id="id_img_papillon" alt="image dessin pap
 
 afficheImg('../JAVASCRIPT/Images/papillon.jpg');
 
-let p = ("<br>"+"La multiplication : " + x + " x " + y + " = " + resultat);
+let p = ("<br>"+"La multiplication : " + x + " x " + y + " = " + produit(x, y));
 document.getElementById("p1").innerHTML = p
 
 // document.write("<br>"+"La multiplication : " + x + " x " + y + " = " + resultat);
+

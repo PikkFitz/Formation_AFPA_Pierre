@@ -21,7 +21,7 @@
 
 // function GetInteger() {
     
-//     window.prompt("saisir un nombre entier : ");
+//    return Number(window.prompt("saisir un nombre entier : "));
 
 // }
 

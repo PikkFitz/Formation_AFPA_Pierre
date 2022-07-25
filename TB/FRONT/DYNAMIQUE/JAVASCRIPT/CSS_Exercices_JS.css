@@ -9,6 +9,7 @@ header {
   overflow: auto;
   flex-wrap: wrap;
   justify-content: space-between;
+  vertical-align: top;
 }
 
 h2 {
@@ -22,7 +23,10 @@ h2 {
 .logo_AFPA {
     max-width: 10%;
     height: auto;
+   
+    
 }
+
 
 /* ---------- NAV ---------- */
 
@@ -44,4 +48,14 @@ button {
     text-decoration: underline ;
     text-decoration-thickness: 2px;
     font-weight: bold;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+.logo_JS {
+
+  max-width: 5.5%;
+  height: auto;
+
   }
