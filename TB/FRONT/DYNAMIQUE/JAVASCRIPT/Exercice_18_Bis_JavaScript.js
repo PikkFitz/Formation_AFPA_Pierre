@@ -7,7 +7,7 @@
 
 const reponses = document.querySelector(".reponses");
 const dernierResultat = document.querySelector(".dernierResultat");
-const tropHautOuTropBas = document.querySelector(".tropHautOuTropBas");
+const tropHautOuTropBas = document.getElementById("label1");
 const textBox = document.getElementById("textBox1");
 const button = document.getElementById("button1");
 
@@ -85,5 +85,5 @@ function reset()
     textBox.focus();
     dernierResultat.style.backgroundColor = "white";
     nAlt()
-
+    
   }
