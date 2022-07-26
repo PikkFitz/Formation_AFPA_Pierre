@@ -8,6 +8,28 @@
 // Veuillez utiliser la propriété innerHTML pour réaliser cet exercice :
 // HTML DOM innerHTML
 
+function AfficheImage(image)
+{
+var img = document.createElement("img");
+img.src = "../JAVASCRIPT/Images/papillon.jpg";
+
+document.getElementById("p1").innerHTML="<img src=../JAVASCRIPT/Images/papillon.jpg></img>";
+return image;
+}
+
+AfficheImage();
+
+// Ou, solution 2 :
+
+// function afficheImg(image)
+// {
+
+// document.write('<img src= '+ image +' id="id_img_papillon" alt="image dessin papillon coloré" class="img_papillon" title="Image papillon">');
+
+// }
+
+// afficheImg("../JAVASCRIPT/Images/papillon.jpg");
+
 function produit(x, y)
 {
 
@@ -26,20 +48,8 @@ console.log("Le second nombre saisi est : " + y);
 produit(x, y);
 console.log("Résultat : " + produit(x, y));
 
-
-//img src ="../JAVASCRIPT/Images/papillon.jpg"
-
-function afficheImg(image)
-{
-
-document.write('<img src= '+ image +' id="id_img_papillon" alt="image dessin papillon coloré" class="img_papillon" title="Image papillon">');
-
-}
-
-afficheImg('../JAVASCRIPT/Images/papillon.jpg');
-
 let p = ("<br>"+"La multiplication : " + x + " x " + y + " = " + produit(x, y));
-document.getElementById("p1").innerHTML = p
+document.getElementById("p2").innerHTML = p
 
 // document.write("<br>"+"La multiplication : " + x + " x " + y + " = " + resultat);
 

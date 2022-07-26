@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- <meta name="description" content="Entrer la description du site web ici (pour les moteur de recherche)"> -->
+  <!-- <meta name="keywords" content="indiquer les mots clés du site, espacés par des , "> -->
+
+  <title>Contact</title>
+
+  <!-- Lien vers feuille CSS -->
+  <link rel="stylesheet" href="../JAVASCRIPT/CSS_Exercice_19_Contact_JavaScript.css">
+
+</head>
+
+<body>
+
+  <main id="main_contact">
+    <section class="section_contact">
+      <!-- Heading -->
+      <h2 class="h2">Vos coordonées : </h2>
+      
+
+      <form action="http://bienvu.net/script.php" method="POST" name="form1" id="formulaire_contact"> 
+
+        <span class="etoiles">*</span> <span id="pObligatoire"> Ces zones sont obligatoires pour envoyer le formulaire</span> <br>
+            <br>
+            <label for="societe">Société : </label><input type="text" name="societe" id="id_societe" placeholder="Entrez le nom de votre société" title="Veuillez entrer le nom de votre société" required> 
+            <span class="etoiles">*</span> <br>
+            <br>
+            <label for="personneAContacter">Personne à contacter: </label><input type="text" name="personneAContacter" id="id_personneAContacter" placeholder="Entrez le nom de la personne à contacter" title="Veuillez entrer le nom de la personne à contacter" required>
+            <span class="etoiles">*</span> <br>
+            <br>
+            <label for="id_adresseEntreprise" id="id_label_adresse">Adresse de l'entreprise : </label><textarea name="adresseEntreprise" id="id_adresseEntreprise" placeholder="Entrez l'adresse de l'entreprise" title="Veuillez entrer l'adresse de l'entreprise"></textarea>
+            <br>
+            <label for="id_codePostal">Code Postal : </label><input type="text" name="codePostal" id="id_codePostal" placeholder="Entrez le code postal" title="Veuillez entrer le code postal" required> 
+            <span class="etoiles">*</span> <br>
+            <br>
+            <label for="id_ville">Ville : </label><input type="text" name="ville" id="id_ville" placeholder="Entrez la ville" title="Veuillez entrer la ville" required> 
+            <span class="etoiles">*</span> <br>
+            <br>
+            <label for="id_email">Email : </label><input type="text" name="email" id="id_email" placeholder="Entrez votre email" title="Veuillez entrer votre email" required> 
+            <span class="etoiles">*</span> <br>
+            <br>
+            <label for="id_tel">Téléphone : </label><input type="text" name="tel" id="id_tel" placeholder="Entrez votre numéro de téléphone" title="Veuillez entrer votre numéro de téléphone">
+            <br>
+            <br>
+            <label for="id_commentaire_environnementProjet" id="id_label_environnementProjet">Sélectionner l'environnement du projet : </label>
+            <select id="id_select_environnementProjet" name="select_environnementProjet" title="Choisissez votre environnement projet"> 
+              <option value="" selected>Veuillez séléctionner un environnement projet</option>
+              <option value="access">Access</option>
+              <option value="java">Java</option>
+              <option value="delphi">Delphi</option>
+              <option value="windev">Windev</option>
+              <option value="visualBasic">Visua Basic</option>
+              <option value="powerBuilder">Power Builder</option>
+              <option value="internet">Internet</option>
+              <option value="intranet">Intranet</option>
+              <option value="windowsNT">Windows NT</option>
+              <option value="unix">Unix</option>
+              <option value="sqlServer">SQL Server</option>
+              <option value="oracle">Oracle</option>
+              <option value="autres">Autres...</option>
+            </select>
+            <textarea name="commentaire_environnementProjet" id="id_commentaire_environnementProjet"  placeholder="Commentaire" title="Commentaire"></textarea>
+            <br>
+            <br>
+   
+            <input type="submit" name="envoyer" value=" Envoyer ">
+            <input type="reset" name="annuler" value="Annuler">
+  
+      </form>
+
+    </section> 
+    
+  </main>
+    
+  <script src="../JAVASCRIPT/Exercice_19_Contact_JavaScript.js"></script>
+</body>
+
+</html>

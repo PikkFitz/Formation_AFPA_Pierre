@@ -1,0 +1,39 @@
+html{
+    overflow: auto;
+}
+
+#pObligatoire {
+    color: rgb(158, 0, 0);
+    font-weight: bold;
+}
+
+.etoiles {
+    color: red;
+}
+
+form {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: text-top;
+}
+
+
+/* Pour mettre le label et le textarea cote à cote + aligner le label au milieu (verticalement) :
+Mettre display : inline-block et vertical-align : middle (ou top ou bottom)*/
+#id_label_adresse, #id_adresseEntreprise{
+    display: block;
+}
+
+#id_adresseEntreprise{
+    width: 180px;
+    height: auto;
+}
+
+#id_select_environnementProjet{
+    display: block;
+}
+
+#id_commentaire_environnementProjet{
+    width: 300px;
+    height: auto;
+}
