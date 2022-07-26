@@ -8,7 +8,8 @@
 var bouton_Ex_13_JS= document.getElementById("Id_button_Ex_13_JS");
 bouton_Ex_13_JS.addEventListener("click", exercice_13_js);
 
-function exercice_13_js(){
+function exercice_13_js()
+{
 
 let cell = Number(window.prompt("Saisissez la taille du tableau : "));
 let tab = new Array(cell);

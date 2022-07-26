@@ -17,6 +17,12 @@ form {
     vertical-align: text-top;
 }
 
+.div_alert_erreur {
+    font-weight: normal;
+    font-size: small;
+    color: red;
+}
+
 
 /* Pour mettre le label et le textarea cote à cote + aligner le label au milieu (verticalement) :
 Mettre display : inline-block et vertical-align : middle (ou top ou bottom)*/

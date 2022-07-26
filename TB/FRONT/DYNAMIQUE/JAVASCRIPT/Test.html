@@ -5,8 +5,20 @@
   
 </head>
 <body>
-   <!-- Ajouter le code Javascript ici pour le titre -->   
-   <p>Rien à ajouter</p>  
+   <select id="ComboPays"  >
+      <option value="français" >FRANCE</option>
+      <option value="italien" select="selected">ITALIE</option>
+      </select>
+      
+      
+      <script>
+      var selectElmt = document.getElementById("ComboPays");
+      var valeurselectionnee = selectElmt.options[selectElmt.selectedIndex].value;
+      var textselectionne = selectElmt.options[selectElmt.selectedIndex].text;
+
+      console.log("valeurselectionnee : " + valeurselectionnee)
+      console.log("textselectionne : " + textselectionne)
+      </script>
 </body>
 </html>
-````
+

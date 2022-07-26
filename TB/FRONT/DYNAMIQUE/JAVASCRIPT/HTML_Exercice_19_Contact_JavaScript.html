@@ -27,22 +27,27 @@
 
         <span class="etoiles">*</span> <span id="pObligatoire"> Ces zones sont obligatoires pour envoyer le formulaire</span> <br>
             <br>
-            <label for="societe">Société : </label><input type="text" name="societe" id="id_societe" placeholder="Entrez le nom de votre société" title="Veuillez entrer le nom de votre société" required> 
+            <label for="id_societe">Société : </label><input type="text" name="societe" id="id_societe" placeholder="Entrez le nom de votre société" title="Veuillez entrer le nom de votre société" required> 
             <span class="etoiles">*</span> <br>
+            <div id="id_div_societe" class="div_alert_erreur"></div>
             <br>
-            <label for="personneAContacter">Personne à contacter: </label><input type="text" name="personneAContacter" id="id_personneAContacter" placeholder="Entrez le nom de la personne à contacter" title="Veuillez entrer le nom de la personne à contacter" required>
+            <label for="id_personneAContacter">Personne à contacter: </label><input type="text" name="personneAContacter" id="id_personneAContacter" placeholder="Entrez le nom de la personne à contacter" title="Veuillez entrer le nom de la personne à contacter" required>
             <span class="etoiles">*</span> <br>
+            <div id="id_div_personneAContacter" class="div_alert_erreur"></div>
             <br>
             <label for="id_adresseEntreprise" id="id_label_adresse">Adresse de l'entreprise : </label><textarea name="adresseEntreprise" id="id_adresseEntreprise" placeholder="Entrez l'adresse de l'entreprise" title="Veuillez entrer l'adresse de l'entreprise"></textarea>
             <br>
             <label for="id_codePostal">Code Postal : </label><input type="text" name="codePostal" id="id_codePostal" placeholder="Entrez le code postal" title="Veuillez entrer le code postal" required> 
             <span class="etoiles">*</span> <br>
+            <div id="id_div_codePostal" class="div_alert_erreur"></div>
             <br>
             <label for="id_ville">Ville : </label><input type="text" name="ville" id="id_ville" placeholder="Entrez la ville" title="Veuillez entrer la ville" required> 
             <span class="etoiles">*</span> <br>
+            <div id="id_div_ville" class="div_alert_erreur"></div>
             <br>
             <label for="id_email">Email : </label><input type="text" name="email" id="id_email" placeholder="Entrez votre email" title="Veuillez entrer votre email" required> 
             <span class="etoiles">*</span> <br>
+            <div id="id_div_email" class="div_alert_erreur"></div>
             <br>
             <label for="id_tel">Téléphone : </label><input type="text" name="tel" id="id_tel" placeholder="Entrez votre numéro de téléphone" title="Veuillez entrer votre numéro de téléphone">
             <br>
@@ -68,8 +73,8 @@
             <br>
             <br>
    
-            <input type="submit" name="envoyer" value=" Envoyer ">
-            <input type="reset" name="annuler" value="Annuler">
+            <input type="submit" id="id_button_submit" name="envoyer" value=" Envoyer ">
+            <input type="reset" id="id_button_reset" name="annuler" value="Annuler">
   
       </form>
 
