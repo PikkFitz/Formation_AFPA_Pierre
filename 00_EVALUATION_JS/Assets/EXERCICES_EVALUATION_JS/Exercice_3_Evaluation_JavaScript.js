@@ -37,7 +37,7 @@ while(loop == true)
         window.alert("Erreur : prénom incorrect");
     }
     // ---------- ON PARCOURT TOUTES LES CELLULES DU TABLEAU ----------
-    for(i=0; i<=tab.length-1; i++)
+    for(i=0; i<=((tab.length-1)-Number(compteur)); i++)
     {
 
     // ---------- SI LE PRENOM SAISI = LE CONTENU D'UNE DES CELLULES ET EST DIFFERENT DE "" ----------
