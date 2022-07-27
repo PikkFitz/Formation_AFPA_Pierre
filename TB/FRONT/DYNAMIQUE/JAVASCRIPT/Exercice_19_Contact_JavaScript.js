@@ -48,7 +48,7 @@ function verifForm(event)
 
     else
     {
-        let filtre_societe = new RegExp("^[\w ]+$");
+        let filtre_societe = new RegExp("^[\\S ]+$");
         let res_societe = filtre_societe.test(verif_societe.value);
 
         if (res_societe == false) 
@@ -81,7 +81,7 @@ function verifForm(event)
 
     else
     {
-        let filtre_personneAContacter = new RegExp("^[\S ]+$");
+        let filtre_personneAContacter = new RegExp("^[\\S ]+$");
         let res_personneAContacter = filtre_personneAContacter.test(verif_personneAContacter.value);
 
         if (res_personneAContacter == false) 
@@ -146,7 +146,7 @@ function verifForm(event)
 
     else
     {
-        let filtre_ville = new RegExp("^[\S ]+$");
+        let filtre_ville = new RegExp("^[\\S ]+$");
         let res_ville = filtre_ville.test(verif_ville.value);
 
         if (res_ville == false) 
@@ -179,7 +179,7 @@ function verifForm(event)
 
     else
     {
-        let filtre_email = new RegExp("^[\@]+$");
+        let filtre_email = new RegExp("^[\\S ]*[@]+[\\S ]*$");
         let res_email = filtre_email.test(verif_email.value);
 
         if (res_email == false) 

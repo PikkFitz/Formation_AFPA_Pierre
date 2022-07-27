@@ -17,7 +17,6 @@ let mot = window.prompt("Saisissez un mot : ");
 let voyelles ="aeiouy";
 let lettre;
 let compteur=0;
-
 let longueur_mot= mot.length;
 
 for (i=0; i<longueur_mot; i++)
