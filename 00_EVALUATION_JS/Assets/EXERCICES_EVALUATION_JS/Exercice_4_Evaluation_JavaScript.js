@@ -83,4 +83,11 @@ console.log("Prix unitaire : " + PU + "€\n" +
             "Frais de port : " + PortP + ", soit " + PORT + "€\n" + 
             "Prix à payer : " + PAP + "€")
 
+window.alert("Prix unitaire : " + PU + "€\n" +
+            "Quantité commandée : " + QTECOM + "\n" +
+            "Prix total : " + TOT + "€\n" +
+            "Remise : " + RemiseP + ", soit " + REM + "€\n" +
+            "Frais de port : " + PortP + ", soit " + PORT + "€\n" + 
+            "Prix à payer : " + PAP + "€")
+
 }
