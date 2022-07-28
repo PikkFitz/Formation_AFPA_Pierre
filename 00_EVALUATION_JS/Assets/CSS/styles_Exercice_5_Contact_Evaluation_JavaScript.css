@@ -174,7 +174,7 @@ nav li a:hover, nav li a:focus, nav li a:active {
 .aside_contact {
     margin : auto;
     width: 24%;
-    height: 573.33px;
+    height: 652.95px;
     background-color: rgb(201, 189, 189);
 }
 
@@ -186,6 +186,11 @@ nav li a:hover, nav li a:focus, nav li a:active {
 
 #id_p_sexe {
     margin: 1px 0px 1px 0px;
+}
+
+#id_question {
+    width: 300px;
+    height: auto;
 }
 
 /*!!!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!*/
