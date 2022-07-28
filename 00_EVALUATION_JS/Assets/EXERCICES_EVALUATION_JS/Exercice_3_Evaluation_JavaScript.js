@@ -17,9 +17,10 @@ function exercice_3_evaluation_js()
 {
 
 let tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+let cell = Number(tab.length);
 let loop = true;
 let compteur = 0;
-let compteur2 = 0;
+let find = false;
 
 console.log("tab : " + tab);
 
@@ -32,12 +33,13 @@ while(loop == true)
     // ---------- SI LE PRENOM EST EGALE A 0 OU "" OU ANNULER, ON QUITTE LA BOUCLE ET LA SAISIE S'ARRETE ----------
     if (prenom == 0 || prenom == "" || prenom == null)
     {
-        loop = false;
-        console.log("Erreur : prénom incorrect");
-        window.alert("Erreur : prénom incorrect");
+        // loop = false;
+        console.log("Erreur : prénom incorrect ---> Fin du programme");
+        window.alert("Erreur : prénom incorrect ---> Fin du programme");
+        break;
     }
     // ---------- ON PARCOURT TOUTES LES CELLULES DU TABLEAU ----------
-    for(i=0; i<=((tab.length-1)-Number(compteur)); i++)
+    for(i=0; i<=((cell-1)-Number(compteur)); i++)
     {
 
     // ---------- SI LE PRENOM SAISI = LE CONTENU D'UNE DES CELLULES ET EST DIFFERENT DE "" ----------
@@ -46,7 +48,7 @@ while(loop == true)
             console.log("Prénom trouvé dans le tableau !");
             
     // ---------- DECALAGE DES CELLULES A PARTIR DE LA CELLULE CORRESPONDANTE AU PRENOM SAISI ----------
-            for(i; i<=tab.length-2; i++)
+            for(i; i<=cell-2; i++)
             {
                 tab[i] = tab[i+1];
             }
@@ -57,21 +59,24 @@ while(loop == true)
             console.log("tab : " + tab);
 
             compteur++;
-            compteur2++;
+            find = true;
             console.log("compteur : " + compteur);
             // i=0;
             window.alert("Prénom trouvé dans le tableau !");
         }
 
     }
+    console.log("find : " + find);
 
-    if (compteur2 == 0)
+    // ---------- SI LE PRENOM SAISI N'A PAS ETE TROUVE, UN MESSAGE D'ERREUR APPARAIT----------
+    if (find == false)
     {
         console.log("Erreur : prénom introuvable dans le tableau !");
         window.alert("Erreur : prénom introuvable dans le tableau !");
     }
 
-    else if (compteur == tab.length)
+    // ---------- SI TOUS LES PRENOMS ONT ETE TROUVES, UN MESSAGE APPARAIT ET LE PROGRAMME S'ARRETE ----------
+    else if (compteur == cell)
     {
         loop = false;
         console.log("Tous les prénoms ont été trouvés, le tableau est désormais vide !");
@@ -80,7 +85,7 @@ while(loop == true)
 
     console.log("loop : " + loop);
     
-    compteur2 = 0;
+    find = false;
 
 }
 console.log("Fin de boucle");

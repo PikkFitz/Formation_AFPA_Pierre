@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- <meta name="description" content="Entrer la description du site web ici (pour les moteur de recherche)"> -->
+  <!-- <meta name="keywords" content="indiquer les mots clés du site, espacés par des , "> -->
+
+  <title>Contact Jarditou</title>
+
+  <!-- Lien vers feuille CSS -->
+  <link rel="stylesheet" href="../Assets/CSS/styles_Exercice_5_Contact_Evaluation_JavaScript.css">
+
+</head>
+
+<body>
+  <Header class="header">
+   
+    <img src="../SRC/IMG/jarditou_logo.jpg" alt="Logo Jarditou" class="logo_jarditou" title="Logo Jarditou">
+    <h3 class="slogan">Tout le jardin dans votre magasin !</h3>
+
+  </Header>
+  
+  <nav>
+
+    <ul>
+      <li><a href="../Jarditou/Index.html" title="Accueil" class="lien_accueil">Accueil</a></li>
+      <li><a href="../Jarditou/Tableau.html" title="Tableau" class="lien_tableau">Tableau</a></li>
+      <li><a href="../Jarditou/Contact.html" title="Contact" class="lien_contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <img src="../SRC/IMG/promotion.jpg" alt="Promotion lames de terrasse Jaritou" class="promotion" title="Promotion lames de terrasse Jarditou">
+  
+  <main id="main_contact">
+    <section class="section_contact">
+      <!-- Heading -->
+      <h2 class="h2">Contact</h2>
+      
+
+      <form action="http://bienvu.net/script.php" method="POST" id="id_formulaire_contact"> 
+
+        <p>* Ces zones sont obligatoires</p> 
+  
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+  
+                <label for="id_nom">Votre nom*: </label><input type="text" name="nom" id="id_nom" placeholder="Entrez votre nom" title="Veuillez entrer votre nom"><br>
+                <div id="id_div_nom" class="div_alert_erreur"></div>
+                <br>
+                <label for="id_prenom">Votre prénom*: </label><input type="text" name="prenom" id="id_prenom" placeholder="Entrez votre prénom" title="Veuillez entrer votre prénom"><br>
+                <div id="id_div_prenom" class="div_alert_erreur"></div>
+                <br>
+
+                <p id="id_p_sexe">Sexe*:<input type="radio" name="sexe" id="id_sexeF" value="feminin" title="Veuillez entrer votre sexe"> Féminin
+                                        <input type="radio" name="sexe" id="id_sexeM" value="masculin" title="Veuillez entrer votre sexe"> Masculin</p>
+                <div id="id_div_sexe" class="div_alert_erreur"></div>
+                <br>
+
+                <label for="id_date">Date de naissance*: </label><input type="date" name="date" id="id_date" title="Veuillez entrer votre sexe"><br>
+                <div id="id_div_date" class="div_alert_erreur"></div>
+                <br>
+                <label for="id_cp">Code postal*: </label><input type="text" name="cp" id="id_cp" placeholder="Entrez votre code postal" title="Veuillez entrer votre code postal"><br>
+                <div id="id_div_cp" class="div_alert_erreur"></div>
+                <br>
+                <label for="id_adresse">Adresse*: </label><input type="text" name="adresse" id="id_adresse" placeholder="Entrez votre adresse" title="Veuillez entrer votre adresse"><br>
+                <div id="id_div_adresse" class="div_alert_erreur"></div>
+                <br>
+                <label for="id_ville">Ville*: </label><input type="text" name="ville" id="id_ville" placeholder="Entrez votre ville" title="Veuillez entrer votre ville"><br>
+                <div id="id_div_ville" class="div_alert_erreur"></div>
+                <br>
+                <label for="id_email">Email*: </label><input type="text" name="email" id="id_email" placeholder="Entrez votre email" title="Veuillez entrer votre email"><br>
+                <div id="id_div_email" class="div_alert_erreur"></div>
+               
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Votre demande</legend>
+  
+                <label for="id_sujet">Sujet*: </label>
+                <select id="id_sujet" title="Veuillez entrer le sujet de votre demande"> 
+                    <option value="" selected>Veuillez séléctionner un sujet</option>
+                    <option value="commandes">Mes commandes</option>
+                    <option value="produit">Questions sur un produit</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autres">Autres</option>
+                </select>
+                <div id="id_div_sujet" class="div_alert_erreur"></div>
+                <br>
+                <label for="id_question">Votre question*: </label><textarea name="commentaire" id="id_question" rows="4" cols="30" placeholder="Posez votre question ici" title="Veuillez poser votre question"></textarea><br>
+                <div id="id_div_question" class="div_alert_erreur"></div>
+                  
+        </fieldset>
+                  
+                <br>
+                <input type="checkbox" name="donnees" id="id_checkbox" value="donnees" title="Veuillez cocher cette case"> * J'accepte le traitement informatique de ce formulaire<br>
+                <div id="id_div_checkbox" class="div_alert_erreur"></div>
+                <br>
+                <input type="submit" id="id_button_submit" name="envoyer" value=" Envoyer ">
+                <input type="reset" id="id_button_reset" name="annuler" value="Annuler">
+  
+  
+      </form>
+
+    </section> 
+    
+    <aside class="aside_contact">
+  
+      <p>[COLONNE DE DROITE]</p>
+      
+    </aside>
+    
+  </main>
+
+  
+  <footer>
+
+    <ul>
+      <li><a href="../Jarditou/Mentions_legales.html" title="Mentions legales" class="lien_mentions_legales">Mentions légales</a></li>
+      <li><a href="../Jarditou/Horaires.html" title="Horaires" class="lien_horaires">Horaires</a></li>
+      <li><a href="../Jarditou/Plan_du_site.html" title="Plan du site" class="lien_plan_du_site">Plan du site</a></li>
+    </ul>  
+
+  </footer>
+
+  <script src="../Assets/EXERCICES_EVALUATION_JS/Exercice_5_Contact_Evaluation_JavaScript.js"></script>
+    
+</body>
+</html>

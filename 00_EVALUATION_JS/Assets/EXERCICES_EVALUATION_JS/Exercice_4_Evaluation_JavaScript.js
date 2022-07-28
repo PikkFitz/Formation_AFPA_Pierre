@@ -76,18 +76,20 @@ else if (TOTREM <= 500)
 
 let PAP = Number(TOTREM) + Number(PORT);
 
-console.log("Prix unitaire : " + PU + "€\n" +
-            "Quantité commandée : " + QTECOM + "\n" +
-            "Prix total : " + TOT + "€\n" +
-            "Remise : " + RemiseP + ", soit " + REM + "€\n" +
-            "Frais de port : " + PortP + ", soit " + PORT + "€\n" + 
-            "Prix à payer : " + PAP + "€")
+console.log("Prix unitaire : " + Math.round(PU * 100) / 100 + "€\n" +
+            "Quantité commandée : " + Math.round(QTECOM) + "\n" +
+            "Prix total : " + Math.round(TOT * 100) / 100 + "€\n" +
+            "Remise : " + RemiseP + ", soit " + Math.round(REM * 100) / 100 + "€\n" +
+            "Prix avec remise : " + Math.round(TOTREM * 100) / 100 + "€\n" +
+            "Frais de port : " + PortP + ", soit " + Math.round(PORT * 100) / 100 + "€\n" + 
+            "Prix à payer : " + Math.round(PAP * 100) / 100 + "€")
 
-window.alert("Prix unitaire : " + PU + "€\n" +
-            "Quantité commandée : " + QTECOM + "\n" +
-            "Prix total : " + TOT + "€\n" +
-            "Remise : " + RemiseP + ", soit " + REM + "€\n" +
-            "Frais de port : " + PortP + ", soit " + PORT + "€\n" + 
-            "Prix à payer : " + PAP + "€")
+window.alert("Prix unitaire : " + Math.round(PU * 100) / 100 + "€\n" +
+             "Quantité commandée : " + Math.round(QTECOM) + "\n" +
+             "Prix total : " + Math.round(TOT * 100) / 100 + "€\n" +
+             "Remise : " + RemiseP + ", soit " + Math.round(REM * 100) / 100 + "€\n" +
+             "Prix avec remise : " + Math.round(TOTREM * 100) / 100 + "€\n" +
+             "Frais de port : " + PortP + ", soit " + Math.round(PORT * 100) / 100 + "€\n" + 
+             "Prix à payer : " + Math.round(PAP * 100) / 100 + "€")
 
 }

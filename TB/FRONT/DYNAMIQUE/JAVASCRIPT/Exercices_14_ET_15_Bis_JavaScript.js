@@ -108,14 +108,14 @@ function GetInteger() {
  
          }
      
-     // Dans ce cas, !swap équivaut à swap != true ou swap = false
+     // Dans ce cas, !swap équivaut à swap != true ou swap == false
  
          if(!swap)
          {
            break;
          }
  
-     }
+     }  
          
      console.log("Tableau : " + tab)
      window.alert("Tableau : " + tab);

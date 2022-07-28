@@ -1,5 +1,6 @@
 const option_selec = document.getElementById("id_select_environnementProjet");
 option_selec.addEventListener("click", addText);
+const commentText = document.getElementById("id_commentaire_environnementProjet");
 
 const submit_button = document.getElementById("id_button_submit");
 submit_button.addEventListener("click", verifForm);
@@ -7,7 +8,6 @@ submit_button.addEventListener("click", verifForm);
 const reset_button = document.getElementById("id_button_reset");
 reset_button.addEventListener("click", reset);
 
-const commentText = document.getElementById("id_commentaire_environnementProjet");
 
 function addText()
 {
@@ -37,11 +37,12 @@ function verifForm(event)
 // ---------- VERIF SOCIETE ----------
 
     let verif_societe = document.getElementById("id_societe");
-    console.log("verif_societe : " + verif_societe.value)
+    console.log("verif_societe : " + verif_societe.value);
 
     if (verif_societe.value == "") 
     {
         document.getElementById("id_div_societe").innerHTML = "Veuillez renseigner le nom de la société";
+        id_div_societe.style.color = "red";
         event.preventDefault();
         console.log("Erreur société");
     } 
@@ -70,11 +71,12 @@ function verifForm(event)
 // ---------- VERIF PERSONNE A CONTACTER ----------
 
     let verif_personneAContacter = document.getElementById("id_personneAContacter");
-    console.log("verif_personneAContacter : " + verif_personneAContacter.value)
+    console.log("verif_personneAContacter : " + verif_personneAContacter.value);
 
     if (verif_personneAContacter.value == "") 
     {
-        document.getElementById("id_personneAContacter").innerHTML = "Veuillez renseigner le nom de la personne à contacter";
+        document.getElementById("id_div_personneAContacter").innerHTML = "Veuillez renseigner le nom de la personne à contacter";
+        id_div_personneAContacter.style.color = "red";
         event.preventDefault();
         console.log("Erreur personne à contacter");
     } 
@@ -103,18 +105,19 @@ function verifForm(event)
 // ---------- VERIF CODE POSTAL ----------
 
     let verif_codePostal = document.getElementById("id_codePostal");
-    console.log("verif_codePostal : " + verif_codePostal.value)
+    console.log("verif_codePostal : " + verif_codePostal.value);
 
     if (verif_codePostal.value == "") 
     {
-        document.getElementById("id_codePostal").innerHTML = "Veuillez renseigner le code postal";
+        document.getElementById("id_div_codePostal").innerHTML = "Veuillez renseigner le code postal";
+        id_div_codePostal.style.color = "red";
         event.preventDefault();
         console.log("Erreur code postal");
     } 
 
     else
     {
-        let filtre_codePostal = new RegExp("^[0-9]{1,5}$");
+        let filtre_codePostal = new RegExp("^[0-9]{5}$");
         let res_codePostal = filtre_codePostal.test(verif_codePostal.value);
 
         if (res_codePostal == false) 
@@ -135,11 +138,12 @@ function verifForm(event)
 // ---------- VERIF VILLE ----------
 
     let verif_ville = document.getElementById("id_ville");
-    console.log("verif_ville : " + verif_ville.value)
+    console.log("verif_ville : " + verif_ville.value);
 
     if (verif_ville.value == "") 
     {
-        document.getElementById("id_ville").innerHTML = "Veuillez renseigner la ville";
+        document.getElementById("id_div_ville").innerHTML = "Veuillez renseigner la ville";
+        id_div_ville.style.color = "red";
         event.preventDefault();
         console.log("Erreur ville");
     } 
@@ -168,11 +172,12 @@ function verifForm(event)
     // ---------- VERIF EMAIL ----------
 
     let verif_email = document.getElementById("id_email");
-    console.log("verif_email : " + verif_email.value)
+    console.log("verif_email : " + verif_email.value);
 
     if (verif_email.value == "") 
     {
-        document.getElementById("id_email").innerHTML = "Veuillez renseigner l'email";
+        document.getElementById("id_div_email").innerHTML = "Veuillez renseigner l'email";
+        id_div_email.style.color = "red";
         event.preventDefault();
         console.log("Erreur email");
     } 
